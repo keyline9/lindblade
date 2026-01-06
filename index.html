@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lindblade</title>
+  <meta name="description" content="Lindblade — angular modernist custom knives. Recent work and inquiries via Instagram." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Lindblade" />
+  <meta property="og:description" content="Angular modernist custom knives. Recent work and inquiries via Instagram." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/og.jpg" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+</head>
+
+<body>
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Lindblade home">
+        <span class="brand__wordmark">Lindblade</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Inquiries</a>
+        <a class="btn btn--small" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+
+      <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">
+        <span class="menu__bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="kicker">Angular modernism • small-batch</p>
+          <h1>Custom knives with a clean, purpose-built edge.</h1>
+          <p class="lede">
+            Lindblade is a side-project focused on geometry, restraint, and finish quality.
+            The most current work lives on Instagram.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">View on Instagram</a>
+            <a class="btn btn--ghost" href="#work">Featured work</a>
+          </div>
+          <p class="micro">
+            Note: Instagram doesn’t reliably allow pulling full‑resolution images into a purely static site without an API token.
+            This site ships with placeholders you can replace with your own exports in minutes.
+          </p>
+        </div>
+
+        <div class="hero__media" aria-hidden="true">
+          <div class="hero__frame">
+            <img src="images/hero.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head">
+          <h2>Featured work</h2>
+          <p class="subtle">Swap these placeholders with your own images (or keep it ultra-minimal and let Instagram do the heavy lifting).</p>
+        </div>
+
+        <div class="grid">
+          <figure class="card">
+            <img src="images/work-01.svg" alt="Featured work 01" loading="lazy" />
+            <figcaption>Model / build notes</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="images/work-02.svg" alt="Featured work 02" loading="lazy" />
+            <figcaption>Materials / finish</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="images/work-03.svg" alt="Featured work 03" loading="lazy" />
+            <figcaption>Detail / geometry</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="images/work-04.svg" alt="Featured work 04" loading="lazy" />
+            <figcaption>Edge / action</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="images/work-05.svg" alt="Featured work 05" loading="lazy" />
+            <figcaption>Handle / hardware</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="images/work-06.svg" alt="Featured work 06" loading="lazy" />
+            <figcaption>Finished piece</figcaption>
+          </figure>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>Want the live feed?</h3>
+            <p class="subtle">Best experience is Instagram (current availability, WIP, drops).</p>
+          </div>
+          <a class="btn btn--small" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">Open @lindblade</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about">
+      <div class="container split">
+        <div>
+          <h2>About</h2>
+          <p>
+            Lindblade is an independent maker project based in San Jose, California.
+            Designs lean angular and modern — fewer curves, more intent.
+          </p>
+          <p class="subtle">
+            If you want this page to say more (steel choices, design philosophy, drop cadence),
+            you can keep it short and factual — Braun, not brochure.
+          </p>
+        </div>
+
+        <div class="spec">
+          <div class="spec__row"><span>Location</span><span>San Jose, CA</span></div>
+          <div class="spec__row"><span>Style</span><span>Angular modernism</span></div>
+          <div class="spec__row"><span>Production</span><span>Small-batch</span></div>
+          <div class="spec__row"><span>Primary channel</span><span>Instagram</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container center">
+        <h2>Inquiries</h2>
+        <p class="lede subtle">DM is the fastest way to talk availability, commissions, or questions.</p>
+        <div class="hero__cta">
+          <a class="btn" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">Message @lindblade</a>
+          <a class="btn btn--ghost" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">View latest work</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="footer__brand">Lindblade</span>
+        <span class="dot" aria-hidden="true">•</span>
+        <span class="subtle">© <span id="year"></span></span>
+      </div>
+      <div class="footer__right">
+        <a href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
