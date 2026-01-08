@@ -12,8 +12,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/og.jpg" />
 
-  <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+  <!-- Cache-bust to avoid Safari holding old CSS -->
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 
 <body>
@@ -27,10 +29,12 @@
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Inquiries</a>
-        <a class="btn btn--small" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn--small" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">
+          Instagram
+        </a>
       </nav>
 
-      <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">
+      <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" type="button">
         <span class="menu__bars" aria-hidden="true"></span>
         <span class="sr-only">Menu</span>
       </button>
@@ -40,7 +44,9 @@
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="#contact">Inquiries</a>
-      <a class="btn" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">Visit Instagram</a>
+      <a class="btn" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">
+        Visit Instagram
+      </a>
     </div>
   </header>
 
@@ -54,12 +60,14 @@
             Lindblade is a side-project focused on geometry, restraint, and finish quality.
             The most current work lives on Instagram.
           </p>
+
           <div class="hero__cta">
             <a class="btn" href="https://www.instagram.com/lindblade/" target="_blank" rel="noopener">View on Instagram</a>
             <a class="btn btn--ghost" href="#work">Featured work</a>
           </div>
+
           <p class="micro">
-            Note: Instagram doesn’t reliably allow pulling full‑resolution images into a purely static site without an API token.
+            Note: Instagram doesn’t reliably allow pulling full-resolution images into a purely static site without an API token.
             This site ships with placeholders you can replace with your own exports in minutes.
           </p>
         </div>
@@ -76,7 +84,7 @@
       <div class="container">
         <div class="section__head">
           <h2>Featured work</h2>
-          <p class="subtle">Swap these placeholders with your own images (or keep it ultra-minimal and let Instagram do the heavy lifting).</p>
+          <p class="subtle">Swap placeholders with your own images — or keep it minimal and let Instagram do the heavy lifting.</p>
         </div>
 
         <div class="grid">
@@ -126,7 +134,7 @@
           </p>
           <p class="subtle">
             If you want this page to say more (steel choices, design philosophy, drop cadence),
-            you can keep it short and factual — Braun, not brochure.
+            keep it short and factual — Braun, not brochure.
           </p>
         </div>
 
@@ -164,6 +172,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Cache-bust to avoid Safari holding old JS -->
+  <script src="script.js?v=4"></script>
 </body>
 </html>
