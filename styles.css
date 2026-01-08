@@ -66,8 +66,8 @@ img{ width:100%; display:block; }
   color:var(--text);
   padding:10px;
 }
-
 .menu__bars{
+  display:block;              /* <-- key fix */
   width:18px;
   height:12px;
   background:
