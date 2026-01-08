@@ -106,6 +106,16 @@ img{ max-width:100%; display:block; }
 .mobile-nav a{ color: var(--muted); }
 .mobile-nav a:hover{ color: var(--text); }
 
+/* Respect the HTML hidden attribute */
+.mobile-nav[hidden] {
+  display: none !important;
+}
+
+.menu.is-open {
+  opacity: 0.9;
+}
+
+
 .btn{
   display:inline-flex;
   align-items:center;
