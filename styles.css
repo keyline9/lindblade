@@ -324,3 +324,9 @@ h2{
 @media (max-width: 520px){
   .card{ grid-column: span 12; }
 }
+@media (max-width: 520px){
+  :root{
+    --pad: 16px;   /* mobile side gutter */
+    --pad2: 28px;  /* section spacing if you want it tighter */
+  }
+}
